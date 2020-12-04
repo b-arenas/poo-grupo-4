@@ -22,10 +22,10 @@ class Vista
 
     def mostrarListadoPacientes(pacientes)
         puts "-----Listado de Pacientes-----"
-           for paciente in pacientes
-                mostrarPaciente(paciente)
-           end
-     end
+         for paciente in pacientes
+               mostrarPaciente(paciente)
+         end
+    end
 
      def mostrarListadoMedicos(medicos)
         puts "-----Listado de Médicos-----"

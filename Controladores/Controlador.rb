@@ -9,16 +9,15 @@ class Controlador
     end
 
     def registrar(tipo, *arg)
-        dni = nil
-        
+                
         case tipo
         when "p"
-            if (modelo.obtener(tipo, dni) != nil)
+            if (modelo.obtener(tipo, arg[0]) != nil)
                 vista.dniRepetido
                 return
             end
         when "m"
-            if (modelo.obtener(tipo, dni) != nil)
+            if (modelo.obtener(tipo, arg[0]) != nil)
                 vista.dniRepetido
                 return
             end

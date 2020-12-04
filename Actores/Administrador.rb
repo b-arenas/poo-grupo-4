@@ -11,7 +11,9 @@ class Administrador
     def registrar(tipo, objeto)
         case tipo
         when "p"
-            arregloPacientes.push(objeto)
+            if objeto.validarEdad
+                arregloPacientes.push(objeto)
+            end
         when "m"
             arregloMedicos.push(objeto)
         when "cp"

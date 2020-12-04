@@ -6,8 +6,6 @@ class Paciente
         @nombreCompleto = nombreCompleto
         @edad = edad
         @tipoSeguro = tipoSeguro
-        @cantidadCitas = 0
-        @montoPago = 0
     end
 
     def validarEdad
