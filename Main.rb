@@ -17,7 +17,9 @@ pruebas.iniciar
 seleccion = 0
 
 while(seleccion != 99)
-    system('cls')
+    if seleccion != 0
+        system('cls')
+    end
     puts "Opciones:"
     puts "1. Registrar un paciente"
     puts "2. Registrar un médico"
